@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <title>Pengyu Zeng's Homepage</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Pengyu Zeng is currently a third year undergraduate at Wuhan University">
+  <meta name="keywords" content="Pengyu Zeng, Analog & Mixed Signal Circuits, WHU">
+  <meta name="author" content="Pengyu Zeng" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+  <link rel="icon" type="image/png" href="images/icon.png">
+
+</head>
+
+
+<body class="w3-content" style="max-width:1000px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+     <img style="width: 100%;max-width: 100px" alt="profile photo" src="images/WHU.png">
+    <h3><b>Menu</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#news" class="w3-bar-item w3-button">News</a>
+    <a href="#research" class="w3-bar-item w3-button">Research</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#award" class="w3-bar-item w3-button">Awards</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24">Menu</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- The Home Section -->
+    <div class="w3-container w3-light-grey w3-center w3-padding-32" id="home">
+      <!--<img style="width: 80%;max-width: 320px" alt="profile photo" src="images/Yunhe_new.jpg"> -->
+      <h1>Pengyu Zeng</h1>
+        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+          I am a third-year undergraduate at <a href="https://en.whu.edu.cn/About_WHU1/Overview.htm">Wuhan University</a>, Wuhan, China, where I major in Electronic Information Engineering. I am interested in Mixed-signal In-memory Computing, Analog and Mixed-signal Circuits Design and Radio Frequency Circuits Design. I am now a research assistant in <a href="http://rfic.fudan.edu.cn/Research.htm">RFIC Lab</a> at <a href="https://www.fudan.edu.cn/en/">Fudan University</a>.
+        </p>
+
+        <p class="w3-center">
+          <a href="mailto:pengyuzeng03@gmail.com">Email</a> &nbsp/&nbsp
+          <a href="Resume_Pengyu_Zeng_Feb. 2022.pdf">Resume</a> &nbsp/&nbsp
+          <a href="https://www.linkedin.com/in/pengyu-zeng-779861227">Linkedin</a>
+        </p>
+        </tbody></table>
+  </div>
+
+  <!-- The News Section -->
+  <div class="w3-container w3-padding-32" id="news">
+    <h2>News</h2>
+    <p><li> 01/2022, One conference paper has been accepted.</p>
+    <p><li> 01/2022, Oral presentation: <a href="https://mp.weixin.qq.com/s/I3VWf-8isPFn-EoJlEp5xw">"Detailed Analysis of the Digital Error Correction Algorithm, Part 1"</a> is made online.</p>
+
+  </div>
+
+
+<!-- The Research Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="research">
+   <h2>Research Experience</h2>
+   <p class="w3-justify">
+   After two years of learning in course and research, I firmly chose analog and mixed-signal
+   circuits design and its related areas as my research direction. I have research experience in analog circuits design including ADC and SerDes, 
+   digital circuits design about hardware-accelerated SoC and board level circuits design.
+    </p>
+  </p>
+    <h4><li type="square"><b>Highlights</b></li></h4>
+        <strong><p><li>Tutorial and report: <a href="ADC/Detailed_Analysis_of_the_Digital_Error_Correction_in_the_Pipelined_ADC.pdf">Detailed Analysis of the Digital Error Correction Algorithm in the Pipelined ADC</a></p></strong>
+        <strong><p><li>Writing example: <a href="SerDes/CTLE.pdf">A 40Gb/s CTLE of a PAM-4 Wireline Receiver</a></p></strong>
+    <br /> 
+
+    <h4><li type="square"><b>Analog Computing for Deep Neural Network</b></li></h4>
+        <p class="w3-center">
+          <img style="width:96%;" src="AI/graph.png">
+        </p>
+
+        <p class="w3-justify">
+          Due to the large amount of multiply-accumulate (MAC) operations in the deep neural network (DNN) and the inherently ability of DNNs to tolerate the computation errors, analog and mixed-signal circuits is a good option to implement the DNN.
+          I have done some preliminary research on it.</p>
+          <p>The advantages of analog computing are as follows:</p>
+          <p><li>Makes use of the Kirchhoff's Current Law to achieve O(1) MAC operations.</li></p>
+          <p><li>Has low energy dissipation compared to digital circuits in low bit-widths. </li></p>
+          <p><li>Stores the weights of neurons locally to avoid the Von Neumann "Bottleneck" in massive data transmission.</li></p>
+          There are two main approaches to realise the analog computing:
+          <p><li><strong>Resistive processing units (RPU) </strong> use resister arrays to store the weights and generate the input data in time or voltage encoded form. It can also be practical in DNN training with changeable conductances and stochastic computing algorithm. </li></p>
+          <p><li><strong>Binary switched capacitor arrays</strong> achieve the DNN in the binary neural network. The weights and the input data are digital signal, which is more compatible to current applications. It can be extended into multi-bits form. </li></p>
+          Both of the RPU and the binary switched capacitor arrays require digital computing between layers for flexible network configur-abilities including activation functions, so ADCs or comparators are needed in the analog computing circuits.
+        </p>
+
+    <h4><li type="square"><b>Pipelined ADC</b></li></h4>
+      <p class="w3-center">
+        <img style="width:96%;" src="ADC/ADC.png">
+      </p>
+
+      <p class="w3-justify">
+        Pipelined ADC is one of the most popular types of analog-to-digital convertor (ADC) and the digital error correction
+        is a significant algorithm in the pipelined ADC. The structure of the ADC depends on this algorithm which can correct 
+        the aperture error and the digital output error caused by the mismatch of comparators.
+         My research can be divided into three parts: analyse the algorithm, build a behavioral model of the ADC and design the circuits.
+      </p>
+
+      <p><li><strong>Analysis on the algorithm: </strong>There are many different ways to interpret and analyse the digital error correction algorithm in the previous art. My work is to <strong>integrate different methods and propose a detailed and systemic analysis </strong> on it: 
+                    <a href="ADC/Detailed_Analysis_of_the_Digital_Error_Correction_in_the_Pipelined_ADC.pdf"> "Detailed Analysis of the Digital Error Correction Algorithm in the Pipelined ADC"</a>.</li></p>
+      <p class="w3-center">
+            <img style="width:96%;" src="ADC/analysis.png">
+      </p>
+
+
+      <p><li><strong>The behavioral model built on MATLAB: </strong>The simulation on the EDA tools such as Cadence is very slow. The behavioral model can briefly show the performance of the ADC 
+        and verify the structure. A model on the MATLAB can accelerate the whole design process and this model will be open-source after improvement. </li></p>
+      <p class="w3-center">
+        <img style="width:96%;" src="ADC/matlab_profile.png"> 
+      </p>
+
+      <p><li><strong>The research proposal: </strong>
+      <p class="w3-center">
+        <img style="width:96%;" src="ADC/plan.png">
+      </p>
+
+      
+    <h4><li type="square"><b>A 40Gb/s CTLE for a PAM4 Wireline Receiver</b></li></h4>
+      <p class="w3-center">
+        <img style="width:96%;" src="SerDes/structure.png">
+      </p>
+      <p class="w3-justify">
+        As the data rate in the wireline transmission continues to increase, serializer & deserializer (SerDes) is widely used to recover the distorted signal caused by the channel with the low-pass feature.
+         Continuous time linear equalizer (CTLE) as the frontend in the receiver plays a significant role in preliminary improving the signal quality.
+        This research analyses the structure of CTLE and proposes comprehensive improvements on raising the peaking gain and keep the balance among the DC gain, power dissipation, silicon area, etc.
+      </p>
+      <p><li><strong>Research paper: </strong> <a href="SerDes/CTLE.pdf">A 40Gb/s CTLE of a PAM-4 Wireline Receiver</a>.</li></p>
+
+
+      <h4><li type="square"><b>Board Level Circuits Design</b></li></h4>
+      <p class="w3-center">
+        <img style="width:96%;" src="board/1.png"> 
+      </p>
+      <p class="w3-justify">
+        PCB board is useful for chips verification and system implementation. I have learned and been able to skillfully design PCB-level circuits. These two works are for a intelligent transport robot (left) and a frequency modulator (right).
+      </p>
+  </div>
+
+ <!-- 
+  <div class="w3-container w3-padding-32" id="purpose">
+    <h2>Statements of Purpose</h2>
+
+    <p><li> <a href="SoP/SoP.pdf">Statement of purpose of my research interests</a></p>
+    
+
+  </div>  
+The Purpose Section -->
+<!-- The Projects Section -->
+<div class="w3-container w3-padding-32" id="projects">
+  <h2>Academic Projects</h2>
+  <p class="w3-justify">
+    <p><li>2021, <a href="https://github.com/eiszpy/eiszpy.github.io/tree/gh-pages/projects/Gender_voice_recognition/">Gender Voice Recognition Platform with Machine Learning Method</a>.</p>
+    <p><li>2021, <a href="https://github.com/eiszpy/eiszpy.github.io/tree/gh-pages/projects/FM/">Frequency Modulator with Voltage Controlled Varactor</a>.</p>
+    <p><li>2020, <a href="https://github.com/eiszpy/eiszpy.github.io/tree/gh-pages/projects/Robot/">Intelligent Transport Robot Based on Raspberry Pi</a>.</p>
+    <p><li>2020, <a href="https://github.com/eiszpy/eiszpy.github.io/tree/gh-pages/projects/FSM/">Finite State Machine Design for a Timer System Using Verilog</a>.</p>
+    <p><li>2020, <a href="https://github.com/eiszpy/eiszpy.github.io/tree/gh-pages/projects/GPS_Ionospheric_observation/">GPS Ionospheric Observation Platform Based on .Net Framework</a>.</p>
+    <p><li>2019, <a href="https://github.com/eiszpy/eiszpy.github.io/tree/gh-pages/projects/Water_logging/">IoT Platform for Urban Waterlogging Detection Based on LoRa and STM32</a>.</p>
+    <p><li>2019, <a href="https://github.com/eiszpy/eiszpy.github.io/tree/gh-pages/projects/Access_Control/">Intelligent Access Control System Based on Android</a>.</p>
+</div>
+
+  <!-- The Awards Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="award">
+    <h2>Awards & Achievements</h2>
+    <p><li> Beacon-fire Scholarship                  </p>
+    <p><li> Merit Student of Wuhan University               </p>
+    <p><li> The First-class Scholarship of Wuhan University </p>
+    
+    <p><li> The Excellence Award of National College Students Integrated Circuits Innovation Contest</p>
+    <p><li> The Third Prize of Wuhan University Engineering Training Contest</p>
+    <p><li> The Third Prize of Wuhan University Electronic Design Contest   </p>
+  </div>
+
+  <div class="w3-container w3-center w3-padding-24">
+    <p>Latest update on February 27, 2022 at 15:10 UTC. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">W3.CSS</a> .</p>
+    <p>The graph in the section "Analog Computing for Deep Neural Network" is quoted from <a href="https://nicsefc.ee.tsinghua.edu.cn/projects/neural-network-accelerator.html">NICS-EFC</a> .</p>
+</div>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
