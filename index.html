@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
@@ -62,12 +63,15 @@
       <!--<img style="width: 80%;max-width: 320px" alt="profile photo" src="images/Yunhe_new.jpg"> -->
       <h1>Pengyu Zeng</h1>
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-          I am a senior student at <a href="https://en.whu.edu.cn/About_WHU1/Overview.htm">Wuhan University</a>, Wuhan, China, where I major in Electronic Information Engineering. I am interested in In-memory Computing, Analog and Mixed-signal Circuits, Radio Frequency Circuits and Hardware Security. I was a summer student at the University of Notre Dame in 2022 where I joined in Professor <a href="https://engineering.nd.edu/faculty/ningyuan-cao/">Ningyuan Cao</a>'s group as a research intern</a>.
+          I am a senior student at <a href="https://en.whu.edu.cn/About_WHU1/Overview.htm">Wuhan University</a>, Wuhan, China,
+           where I major in Electronic Information Engine. I am interested in Mixed-signal Computing and its related field, 
+           including analog circuits, compute-in-memory, analog ISA and complier design. 
+           I was a summer student at the University of Notre Dame in 2022, where I joined in Professor <a href="http://www.ncao-nd.com/"><strong>Ningyuan Cao</strong></a>'s group as a research intern</a>.
         </p>
 
         <p class="w3-center">
           <a href="mailto:pengyuzeng03@gmail.com">Email</a> &nbsp/&nbsp
-          <a href="Resume_Pengyu_Zeng_Oct. 2022.pdf">Resume</a> &nbsp/&nbsp
+          <a href="Resume_Pengyu_Zeng_Nov. 2022.pdf">Resume</a> &nbsp/&nbsp
           <a href="https://www.linkedin.com/in/pengyu-zeng-779861227">Linkedin</a>
         </p>
         </tbody></table>
@@ -76,9 +80,10 @@
   <!-- The News Section -->
   <div class="w3-container w3-padding-32" id="news">
     <h2>News</h2>
-    <p><li> 09/2022, One conference paper has been submitted to Design, Automation, and Test in Europe (DATE).</p>
-    <p><li> 01/2022, One conference paper has been accepted.</p>
-    <p><li> 01/2022, Oral presentation: <a href="https://mp.weixin.qq.com/s/I3VWf-8isPFn-EoJlEp5xw">"Detailed Analysis of the Digital Error Correction Algorithm, Part 1"</a> is made online.</p>
+    <p><li> [09/2022], One conference paper has been submitted to Design, Automation, and Test in Europe (<strong>DATE</strong>).</p>
+    <p><li> [05/2022], I received <strong>Mitacs Globalink Research Internship Award</strong>, which provides top students worldwide with research opportunities in Canada.
+    <p><li> [01/2022], One conference paper has been accepted.</p>
+    <p><li> [01/2022], <strong>Invited Talk</strong>: <a href="https://mp.weixin.qq.com/s/I3VWf-8isPFn-EoJlEp5xw">"Detailed Analysis of the Digital Error Correction Algorithm"</a>.in Professor <a href="http://www.rfic.fudan.edu.cn/Publications.htm">Zhangwen Tang</a>'s group and a circuits design seminar</p>
 
   </div>
 
@@ -86,96 +91,82 @@
 <!-- The Research Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="research">
    <h2>Research Experience</h2>
-   <p class="w3-justify">
-   After two years of learning in course and research, I firmly chose analog and mixed-signal
-   circuits design and its related areas as my research direction. I have research experience in analog circuits design including ADC and SerDes, 
-   digital circuits design about hardware-accelerated SoC and board level circuits design.
-    </p>
-  </p>
-    <h4><li type="square"><b>Highlights</b></li></h4>
-        <strong><p><li>Tutorial: <a href="AI/Analysis_on_2T_and_1T_Array_based_CIM_and_PUF.pdf">Analysis on 2T and 1T Array based CIM and PUF</a></p></strong>
+   
+<!--
+    <h4><li type="square"><b>Overview</b></li></h4>
+    <p class="w3-justify">
+      After two years of learning in course and research, I firmly chose analog and mixed-signal
+      circuits design and its related areas as my research direction. I have research experience in analog circuits design including ADC and SerDes, 
+      digital circuits design about hardware-accelerated SoC and board level circuits design.
+       </p>
+    
+    <strong><p><li>Tutorial: <a href="AI/Analysis_on_2T_and_1T_Array_based_CIM_and_PUF.pdf">Analysis on 2T and 1T Array based CIM and PUF</a></p></strong>
         <strong><p><li>Tutorial and report: <a href="ADC/Detailed_Analysis_of_the_Digital_Error_Correction_in_the_Pipelined_ADC.pdf">Detailed Analysis of the Digital Error Correction Algorithm in the Pipelined ADC</a></p></strong>
         <strong><p><li>Writing example: <a href="SerDes/CTLE.pdf">A 40Gb/s CTLE of a PAM-4 Wireline Receiver</a></p></strong>
     <br /> 
+        -->
 
-    <h4><li type="square"><b>Compute In-Memory for Deep Neural Network</b></li></h4>
-        <p class="w3-center">
-          <img style="width:96%;" src="AI/graph.png">
-        </p>
-
+    <h4><li type="square"><b>1. Secure Analog Computing</b></li></h4>
         <p class="w3-justify">
-          Due to the large amount of multiply-accumulate (MAC) operations in the deep neural network (DNN) and the inherently ability of DNNs to tolerate the computation errors, analog and mixed-signal circuits is a good option to implement the DNN.
-          I have done some preliminary research on it.</p>
-          <strong><p>Tutorial: <a href="AI/Analysis_on_2T_and_1T_Array_based_CIM_and_PUF.pdf">Analysis on 2T and 1T Array based CIM and PUF</a></p></strong>
-          <p>The advantages of analog computing are as follows:</p>
-          <p><li>Makes use of the Kirchhoff's Current Law to achieve O(1) MAC operations.</li></p>
-          <p><li>Has low energy dissipation compared to digital circuits in low bit-widths. </li></p>
-          <p><li>Stores the weights of neurons locally to avoid the Von Neumann "Bottleneck" in massive data transmission.</li></p>
-          There are two main approaches to realise the analog computing:
-          <p><li><strong>Resistive processing units (RPU) </strong> use resister arrays to store the weights and generate the input data in time or voltage encoded form. It can also be practical in DNN training with changeable conductances and stochastic computing algorithm. </li></p>
-          <p><li><strong>Binary switched capacitor arrays</strong> achieve the DNN in the binary neural network. The weights and the input data are digital signal, which is more compatible to current applications. It can be extended into multi-bits form. </li></p>
-          Both of the RPU and the binary switched capacitor arrays require digital computing between layers for flexible network configur-abilities including activation functions, so ADCs or comparators are needed in the analog computing circuits.
+          <img style="width:96%;" src="AI/fig.png">
+          <p><strong>Tags: Analog Compute-in-Memory, Process Variation, Hardware Security, Compressed Sensing, Automation</strong> </p>
+          <p><strong>Abstract:</strong> Although digital signal has dominated the modern computing system, analog computing has a great potential in neural network inference/training,
+           solving partial differential equations and many other kinds of computations. Besides, the stochastic nature of analog 
+          circuits provides entropy source which can be used to achieve secure computing and communication.</p>
+          <p>We proposed a novel edge computing structure combining analog compute-in-memory and physical unclonable function(PUF) on the same hardware and implement privacy-preserved compressing algorithm in analog domain. 
+            My research also conduct comprehensive quantitative analysis of the nonidealities in CIM. The <strong>fusiform impact (Right Figure)</strong> of process variation, which is common in analog computing system, is one of the main factors limiting the accuracy. 
+            A circuits and testbench generator is built in the research to achieve an automated design flow.
+            <a href="AI/Analysis_on_2T_and_1T_Array_based_CIM_and_PUF.pdf"> <strong>[PDF]</strong></a>
+            <a href="AI/Analysis_on_2T_and_1T_Array_based_CIM_and_PUF.pdf"> <strong>[Code]</strong></a>
+          </p>
+           <br>
         </p>
+       
 
-    <h4><li type="square"><b>Pipelined ADC</b></li></h4>
-      <p class="w3-center">
-        <img style="width:96%;" src="ADC/ADC.png">
-      </p>
-
+    <h4><li type="square"><b>2. Pipelined ADC</b></li></h4>
       <p class="w3-justify">
-        Pipelined ADC is one of the most popular types of analog-to-digital convertor (ADC) and the digital error correction
-        is a significant algorithm in the pipelined ADC. The structure of the ADC depends on this algorithm which can correct 
-        the aperture error and the digital output error caused by the mismatch of comparators.
-         My research can be divided into three parts: analyse the algorithm, build a behavioral model of the ADC and design the circuits.
-      </p>
-
-      <p><li><strong>Analysis on the algorithm: </strong>There are many different ways to interpret and analyse the digital error correction algorithm in the previous art. My work is to <strong>integrate different methods and propose a detailed and systemic analysis </strong> on it: 
-                    <a href="ADC/Detailed_Analysis_of_the_Digital_Error_Correction_in_the_Pipelined_ADC.pdf"> "Detailed Analysis of the Digital Error Correction Algorithm in the Pipelined ADC"</a>.</li></p>
-      <p class="w3-center">
-            <img style="width:96%;" src="ADC/analysis.png">
-      </p>
-
-
-      <p><li><strong>The behavioral model built on MATLAB: </strong>The simulation on the EDA tools such as Cadence is very slow. The behavioral model can briefly show the performance of the ADC 
-        and verify the structure. A model on the MATLAB can accelerate the whole design process and this model will be open-source after improvement. </li></p>
-      <p class="w3-center">
-        <img style="width:96%;" src="ADC/matlab_profile.png"> 
-      </p>
-
-      <p><li><strong>The research proposal: </strong>
-      <p class="w3-center">
-        <img style="width:96%;" src="ADC/plan.png">
+        <img style="width:96%;" src="ADC/new.png">
+        <p><strong>Tags: ADC, Mismatch, Correction, Calibration, Aperture Error, Agile Design, MATLAB</strong> </p>
+        <p></p><strong>Abstract:</strong> Pipelined ADC is one of the most popular types of analog-to-digital convertor (ADC) and the digital error correction
+            is a significant algorithm in the pipelined ADC. The structure of the ADC depends on this algorithm which can correct 
+             the digital output error caused by the mismatch of comparators and aperture error.
+            My research can be divided into three parts: analyze the algorithm, build a behavioral model of the ADC and design the circuits.
+        <a href="ADC/Detailed_Analysis_of_the_Digital_Error_Correction_in_the_Pipelined_ADC.pdf"> <strong>[Slides]</strong></a></p>
+        <br>
       </p>
 
       
-    <h4><li type="square"><b>A 40Gb/s CTLE for a PAM4 Wireline Receiver</b></li></h4>
-      <p class="w3-center">
+    <h4><li type="square"><b>3. A 40Gb/s CTLE for a PAM4 Wireline Receiver</b></li></h4>
+      <p class="w3-justify">
         <img style="width:96%;" src="SerDes/structure.png">
+        <p><strong>Tags: CTLE, PAM-4, ISI, Wireline, Transceiver, Cadence</strong> </p>
+        <p></p><strong>Abstract:</strong> As the data rate in the wireline transmission continues to increase, serializer & deserializer (SerDes) is widely used to recover the distorted signal caused by the channel with the low-pass feature.
+          Continuous time linear equalizer (CTLE) as the frontend in the receiver plays a significant role in preliminary improving the signal quality.
+          This research analyses the structure of CTLE and proposes comprehensive improvements on raising the peaking gain and keep the balance among the DC gain, power dissipation, silicon area, etc.
+        <a href="SerDes/CTLE.pdf"> <strong>[PDF]</strong></a></p>
+        <br>
       </p>
+
+
+      <h4><li type="square"><b>4. Digital and Board Level Circuits Design</b></li></h4>
       <p class="w3-justify">
-        As the data rate in the wireline transmission continues to increase, serializer & deserializer (SerDes) is widely used to recover the distorted signal caused by the channel with the low-pass feature.
-         Continuous time linear equalizer (CTLE) as the frontend in the receiver plays a significant role in preliminary improving the signal quality.
-        This research analyses the structure of CTLE and proposes comprehensive improvements on raising the peaking gain and keep the balance among the DC gain, power dissipation, silicon area, etc.
-      </p>
-      <p><li><strong>Research paper: </strong> <a href="SerDes/CTLE.pdf">A 40Gb/s CTLE of a PAM-4 Wireline Receiver</a>.</li></p>
-
-
-      <h4><li type="square"><b>Board Level Circuits Design</b></li></h4>
-      <p class="w3-center">
         <img style="width:96%;" src="board/1.png"> 
+        <p><strong>Tags: SoC, Accelerator, ARM, FPGA, PCB</strong> </p>
+        <p></p><strong>Abstract:</strong> A SoC for real time image dehaze is implemented on Xilinx FPGA and using ARM Cortex-M3 as CPU <strong>(Left)</strong>.
+         The algorithm is divided into six steps and two 3-stage pipelines to accelerate the operation.
+        The parallel filtering is also proposed to make full use of hardware resource and speed up the operation.
+         PCB board is useful for chips verification and system implementation. I am familiar with PCB-level circuits design. These work <strong>(Right)</strong> is for a intelligent transport robot.
+        <a href="SerDes.html"> <strong>[Schematics]</strong></a></p>
+        <br>
       </p>
-      <p class="w3-justify">
-        PCB board is useful for chips verification and system implementation. I have learned and been able to skillfully design PCB-level circuits. These two works are for a intelligent transport robot (left) and a frequency modulator (right).
-      </p>
+
   </div>
 
  <!-- 
   <div class="w3-container w3-padding-32" id="purpose">
     <h2>Statements of Purpose</h2>
-
     <p><li> <a href="SoP/SoP.pdf">Statement of purpose of my research interests</a></p>
     
-
   </div>  
 The Purpose Section -->
 <!-- The Projects Section -->
@@ -193,21 +184,15 @@ The Purpose Section -->
 
   <!-- The Awards Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="award">
-    <h2>Awards & Achievements</h2>
-    <p><li> Mitacs Globalink Research Internship Award                  </p>
-    <p><li> Beacon-fire Scholarship                  </p>
-    <p><li> Merit Student of Wuhan University               </p>
-    <p><li> The First-class Scholarship of Wuhan University </p>
-    
-    <p><li> The Excellence Award of National College Students Integrated Circuits Innovation Contest</p>
-    <p><li> The Third Prize of Wuhan University Engineering Training Contest</p>
-    <p><li> The Third Prize of Wuhan University Electronic Design Contest   </p>
+    <h2>Miscellaneous</h2>
+    I love sports, especially soccer⚽ and badminton🏸. Team sports bring me joy and passion. Sports and sleep can also help me refresh and recharge my brain. I learned <a href="https://en.wikipedia.org/wiki/Dizi_(instrument)">Zhudi</a>(Chinese flute made by bamboo) for six years and passed some level exams. But, well, I haven't practiced it for a long time because I really don't have a good sense of rhythm :)
+    <strong>Thank you for your time to read this page! Have a good day!</strong>
   </div>
 
   <div class="w3-container w3-center w3-padding-24">
-    <p>Latest update on September 27, 2022 at 15:10 UTC. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">W3.CSS</a> .</p>
-    <p>The graph in the section "Analog Computing for Deep Neural Network" is quoted from <a href="https://nicsefc.ee.tsinghua.edu.cn/projects/neural-network-accelerator.html">NICS-EFC</a> .</p>
-    <img src="//www.clustrmaps.com/map_v2.png?d=npwYceiLtZJo9dHi1bSXMtduNsLqBYCKhURDbBtk3lM&cl=ffffff" />
+    <p>Latest update on November 8, 2022 at 05:10 UTC. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">W3.CSS</a> .</p>
+    <!--<img src="//www.clustrmaps.com/map_v2.png?d=npwYceiLtZJo9dHi1bSXMtduNsLqBYCKhURDbBtk3lM&cl=ffffff" />
+-->
 </div>
 
   <!-- End page content -->
