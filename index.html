@@ -81,9 +81,11 @@
   <div class="w3-container w3-padding-32" id="news">
     <h2>News</h2>
     <p><li> [09/2022] One conference paper has been submitted to Design, Automation, and Test in Europe (<strong>DATE</strong>).</p>
-    <p><li> [05/2022] I received <strong>Mitacs Globalink Research Internship Award</strong>, which provides top students worldwide with research opportunities in Canada.
+    <p><li> [05/2022] I received <strong>Mitacs Globalink Research Internship Award</strong>, 
+      which provides top students worldwide with research opportunities in Canada. I was admitted to University of Waterloo.
+
     <p><li> [01/2022] One conference paper has been accepted.</p>
-    <p><li> [01/2022] <strong>Invited Talk</strong>: <a href="https://mp.weixin.qq.com/s/I3VWf-8isPFn-EoJlEp5xw">"Detailed Analysis of the Digital Error Correction Algorithm"</a>.in Professor <a href="http://www.rfic.fudan.edu.cn/Publications.htm">Zhangwen Tang</a>'s group and a circuits design seminar</p>
+    <p><li> [01/2022] <strong>Invited Talk</strong>: <a href="https://mp.weixin.qq.com/s/I3VWf-8isPFn-EoJlEp5xw">"Detailed Analysis of the Digital Error Correction Algorithm"</a>. in Professor <a href="http://www.rfic.fudan.edu.cn/Publications.htm">Zhangwen Tang</a>'s group and a circuits design seminar</p>
 
   </div>
 
@@ -110,16 +112,25 @@
         <p class="w3-justify">
           <img style="width:96%;" src="AI/fig.png">
           <p><strong>Tags: Process Variation, Analog Compute-in-Memory, Hardware Security, Compressed Sensing, Automation</strong></P> 
-          <P><strong>Abstract:</strong> Analog computing has a great potential in neural network inference/training,
-           solving differential equations and many other kinds of computations. Besides, the stochastic nature of analog 
-          circuits provides entropy source which can be used to achieve secure computing and communication.</P> 
-          
-          <P>In this research, a novel edge computing structure combining analog compute-in-memory and physical unclonable function(PUF) on the same SRAM array is proposed. 
-            A privacy-preserved compressing algorithm is implemented on this hardware and the computation is in the analog domain. 
-            My research also makes comprehensive quantitative analysis of the nonidealities in CIM. The <strong>fusiform impact (Right Figure)</strong> of process variation, 
-            which is common in SRAM and NVM-based analog computing system, is one of the main factors limiting the accuracy. 
-            A randomness and netlist generator is built in the research to achieve an automated design flow.
-            <a href="AI/Analysis_on_2T_and_1T_Array_based_CIM_and_PUF.pdf"> <strong>[PDF]</strong></a>
+          <P><strong>Background:</strong>
+            Analog computing has a great potential in neural network inference/training,
+            solving differential equations and many other kinds of computations. Previous research has 
+            shown that SRAM-based mixed-signal CIM is more energy efficient compared to
+            digital accelerators and NVM-based CIM. Besides, the stochastic nature of analog 
+            circuits provides entropy source which can be used to achieve secure computing and communication.
+          </P>
+          <P><strong>Motivation:</strong>
+            In this research, a novel edge computing structure combining analog CIM and physical unclonable function(PUF) 
+            on the same SRAM array is proposed. A privacy-preserved compressing algorithm is implemented on this hardware.
+            From a general perspective, <strong>A bottom-up analysis of nonidealities</strong> can help to find tradeoff among various of performance 
+            metrics and inspire the improvements. Specifically, process variation is the randomness source of PUF while limits the accuracy of CIM. 
+            We can control <strong>the shift between CIM and PUF</strong> if we can control the impact of the process variation.
+          </P>
+          <P><strong>Analysis & Results:</strong>
+              The nonidealities analysis shows that the main factor limits the accuracy of CIM is the static error caused by the process variation, which 
+              is in a <strong>fusiform shape(Right Figure)</strong> and is common in RAM-based analog computing system. A metric to <strong>quantify the max error</strong> caused by process variation is proposed in the analysis.
+               The control of process variation can improve the robustness and randomness of PUF. Besides, we wrote scripts to achieve an automatic flow from process/temperature variation generation, to SPICE netlist generation
+              <a href="AI/Analysis_on_2T_and_1T_Array_based_CIM_and_PUF.pdf"> <strong>[PDF]</strong></a>
             <a href="https://github.com/pengyuzeng03/Automated-Design-Tool"> <strong>[Code]</strong></a>
           </P> 
            <br>
@@ -129,12 +140,27 @@
     <h4><li type="square"><b>2. Pipelined ADC</b></li></h4>
       <p class="w3-justify">
         <img style="width:96%;" src="ADC/new.png">
-        <p><strong>Tags: ADC, Mismatch, Aperture Error, Correction, Calibration, Agile Design, MATLAB</strong> </p>
-        <p></p><strong>Abstract:</strong> Pipelined ADC is one of the most popular types of analog-to-digital convertor (ADC) and the digital error correction
-            is a significant algorithm in the pipelined ADC. The structure of the ADC depends on this algorithm which can correct 
-             the digital output error caused by the mismatch of comparators and aperture error.
-            My research can be divided into three parts: analyze the algorithm, build a behavioral model of the ADC and design the circuits.
-        <a href="ADC/Detailed_Analysis_of_the_Digital_Error_Correction_in_the_Pipelined_ADC.pdf"> <strong>[Slides]</strong></a></p>
+        <p><strong>Tags: Analog-to-Digital Convertor (ADC), Mismatch, Aperture Error, Correction, Calibration, Agile Design</strong> </p>
+        <P><strong>Background:</strong>Pipelined ADC is one of the most popular types of ADC. The multiple-stage and pipeline design reduces the number of comparators and keeps a high speed.
+         The digital error correction is a significant algorithm 
+         which can correct the digital output error caused by the mismatch of comparators and aperture error. 
+         However, this algorithm lacks of clear explanations for many questions. For example, 
+         why the outputs of each stage need <strong>overlap-addition</strong> to get the total output of ADC? Why the precision of a stage can be <strong>'1.5 bits'</strong>  ? And why the error can be corrected?
+         
+        </p>
+        <P><strong>Motivation:</strong>
+        To answer the questions mentioned above, we need a <strong>systematic and quantitative</strong> modeling and analysis of pipeline ADC.
+         From a general perspective, we need to describe the signal in algebraic equations to quantify the error and <strong>build links</strong> among the analog input signal, analog output(residue) and the digital output codes to explain the principal of correction.
+         Besides, we have to build a bridge between a single stage's output and the ADC's total output to explain the reason of overlap-addition and 'x.5 bits'.
+        </p>
+        <P><strong>Analysis & Results:</strong>
+        We build the transfer equation and its waveform to visualize the process of signal quantization and the impact of mismatch. We proposed that a valid correction should 
+        <strong>not only correct the digital output but also correct the analog residue</strong> to make sure the latter stage's input is correct.
+        Besides, since the simulation on EDA tools is very slow, a behavior model on the MATLAB is built to preliminarily verify the design of ADC, which can accelerate the whole design process.
+        This model will be open-sourced soon.
+        
+        <a href="ADC/Detailed_Analysis_of_the_Digital_Error_Correction_in_the_Pipelined_ADC.pdf"> <strong>[Slides]</strong></a>
+      </p>
         <br>
       </p>
 
@@ -155,9 +181,9 @@
       <p class="w3-justify">
         <img style="width:96%;" src="board/1.png"> 
         <p><strong>Tags: SoC, Accelerator, ARM, FPGA, PCB</strong> </p>
-        <p></p><strong>Abstract:</strong> A SoC for real time image dehaze is implemented on Xilinx FPGA and using ARM Cortex-M3 as CPU <strong>(Left)</strong>.
-         The algorithm is divided into six steps and two 3-stage pipelines to accelerate the operation.
-        The parallel filtering is also proposed to make full use of hardware resource and speed up the operation.
+        <p></p><strong>Abstract:</strong> A SoC for real-time image dehazing is implemented on Xilinx FPGA and uses ARM Cortex-M3 as CPU <strong>(Left)</strong>.
+         The Dark Channel Prior algorithm is divided into two 3-stage pipelines to accelerate the operation.
+        The parallel filtering is also proposed to make full use of hardware resource and speed up the computations.
          PCB board is useful for chips verification and system implementation. I am familiar with PCB-level circuits design. These work <strong>(Right)</strong> is for a intelligent transport robot.
         <a href="https://github.com/pengyuzeng03/pengyuzeng03.github.io/tree/main/projects/Robot/"> <strong>[Schematics]</strong></a></p>
         <br>
