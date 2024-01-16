@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <title>Pengyu Zeng's Homepage</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Pengyu Zeng is currently a first-year PhD student at University of Washington, Seattle">
+  <meta name="keywords" content="Pengyu Zeng, Analog & Mixed Signal Circuits, WHU">
+  <meta name="author" content="Pengyu Zeng" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+  <link rel="icon" type="image/png" href="images/icon.png">
+
+</head>
+
+
+<body class="w3-content" style="max-width:1000px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <img style="width: 100%;max-width: 110px" alt="profile photo" src="images/UW.png">
+     <img style="width: 100%;max-width: 100px" alt="profile photo" src="images/WHU.png">
+    <h3><b>Menu</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#news" class="w3-bar-item w3-button">News</a>
+    <a href="#research" class="w3-bar-item w3-button">Research</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24">Menu</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>=</b></a>
+  </div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- The Home Section -->
+    <div class="w3-container w3-light-grey w3-center w3-padding-32" id="home">
+  
+      <h1>Pengyu Zeng</h1>
+        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+          I am a first-year PhD student at University of Washington, Seattle, advised by Prof. <a href="https://emitlab.ece.uw.edu/"><strong>Sajjad Moazeni</strong></a>. I am researching and interested in <strong>High-speed Optical Transceiver</strong> and <strong>Mixed-signal Circuits</strong>. I received my bachelor degree from <a href="https://en.whu.edu.cn/About_WHU1/Overview.htm">Wuhan University</a>, Wuhan, China,
+           where I major in Electronic Information Engineering. I was a summer student at the University of Notre Dame in 2022, where I joined in Prof. <a href="http://www.ncao-nd.com/">Ningyuan Cao</a>'s group working on In-memory Computing</a>.
+        </p>
+
+        <p class="w3-center">
+          <a href="mailto:pyzeng03@uw.edu">Email</a> &nbsp/&nbsp
+          <a href="https://pengyuzeng03.github.io/cv.pdf">Curriculum Vitae</a> &nbsp/&nbsp
+          <a href="https://www.linkedin.com/in/pengyu-zeng-779861227">Linkedin</a>
+        </p>
+        </tbody></table>
+  </div>
+
+  <!-- The News Section -->
+  <div class="w3-container w3-padding-32" id="news">
+    <h2>News</h2>
+    <p><li> [09/2023] I joined <a href="https://emitlab.ece.uw.edu/">EMiT</a> Lab as a PhD student at the University of Washington, Seattle.</p>
+    <p><li> [06/2023] I graduated from Wuhan University! 山水一程，三生有幸</p>
+    <p><li> [03/2023] I started internship at a startup in Shanghai, working on AFE for High-speed Display Driver.</p>
+    <p><li> [11/2022] One conference paper has been accepted to Design, Automation, and Test in Europe (<strong>DATE</strong>).</p>
+    <p><li> [05/2022] I received <strong>Mitacs Globalink Research Internship Award</strong>, 
+      which provides top students worldwide with research opportunities in Canada. I was admitted to University of Waterloo.
+
+    <p><li> [01/2022] One conference paper has been accepted.</p>
+    <p><li> [01/2022] <strong>Invited Talk</strong>: <a href="https://mp.weixin.qq.com/s/I3VWf-8isPFn-EoJlEp5xw">"Detailed Analysis of the Digital Error Correction Algorithm"</a>. in Professor <a href="http://www.rfic.fudan.edu.cn/Publications.htm">Zhangwen Tang</a>'s group and a circuits design seminar</p>
+
+  </div>
+
+
+<!-- The Research Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="research">
+   <h2>Research Experience</h2>
+   
+<!--
+    <h4><li type="square"><b>Overview</b></li></h4>
+    <p class="w3-justify">
+      After two years of learning in course and research, I firmly chose analog and mixed-signal
+      circuits design and its related areas as my research direction. I have research experience in analog circuits design including ADC and SerDes, 
+      digital circuits design about hardware-accelerated SoC and board level circuits design.
+       </p>
+    
+    <strong><p><li>Tutorial: <a href="AI/Analysis_on_2T_and_1T_Array_based_CIM_and_PUF.pdf">Analysis on 2T and 1T Array based CIM and PUF</a></p></strong>
+        <strong><p><li>Tutorial and report: <a href="ADC/Detailed_Analysis_of_the_Digital_Error_Correction_in_the_Pipelined_ADC.pdf">Detailed Analysis of the Digital Error Correction Algorithm in the Pipelined ADC</a></p></strong>
+        <strong><p><li>Writing example: <a href="SerDes/CTLE.pdf">A 40Gb/s CTLE of a PAM-4 Wireline Receiver</a></p></strong>
+    <br /> 
+        -->
+
+
+
+        <h4><li type="square"><b>1. Coherent Co-packaged Optical Transceiver
+        </b></li></h4>
+        <p class="w3-justify">
+          <img style="width:96%;" src="C2PO/compare.png">
+          <p><strong>Tags: Optical Interconnect, High-speed Serial Link, Mixed-signal Circuits, TIA, CTLE, SerDes</strong></P> 
+          <P><strong>Background:</strong>
+            Optical interconnect has a great potential in ultrahigh-speed short range data transmission.
+             According to the prediction of IMEC, optical interconnect will be more efficient than conventional
+              copper interconnect when the data rate is higher that 1Tbps in 1 cm transmission range.
+               However, the design for high-performance efficient serializer & deserializer and analog frontend
+                is challenging in optical transceiver.
+          </P>
+
+          <P><strong>Analysis & Results:</strong>
+              In this research, for the serializer and deserializer, I proposed a new <strong>Tri-state MUX</strong>,
+               which (<strong>Fig. a</strong>) has <strong>0.25x</strong> jitter compared to the conventional design
+                (<strong>Fig. b</strong>). Besides, I proposed a novel <strong>True Single-Phase Clock(TSPC) latch</strong>,
+                 which <strong>(Fig. c)</strong>is 2.4x faster than the standard cell, and have better eyes compared to
+                  conventional TSPC design <strong>(Fig. d)</strong>. For the analog front end, MATLAB simulation is used to make a comparison among different architectures of AFE to find a optimal design. AFE is built with Transimpedance Amplifier(TIA) and Continues Time Linear Equalizer(CTLE) based on
+                  the simulation results.
+             
+ 
+          </P> 
+           <br>
+        </p>
+       
+        <h4><li type="square"><b>2. A 40Gb/s CTLE for a PAM4 Wireline Receiver</b></li></h4>
+        <p class="w3-justify">
+          <img style="width:96%;" src="SerDes/structure.png">
+          <p><strong>Tags: CTLE, PAM-4, ISI, Wireline, Transceiver, Cadence</strong> </p>
+          <p></p><strong>Abstract:</strong> As the data rate in the wireline transmission continues to increase, serializer & deserializer (SerDes) is widely used to recover the distorted signal caused by the channel with the low-pass feature.
+            Continuous time linear equalizer (CTLE) as the frontend in the receiver plays a significant role in preliminary improving the signal quality.
+            This research analyses the structure of CTLE and proposes comprehensive improvements on raising the peaking gain and keep the balance among the DC gain, power dissipation, silicon area, etc.
+          <br>
+        </p>
+  
+
+
+    <h4><li type="square"><b>3. Secure Analog Computing</b></li></h4>
+        <p class="w3-justify">
+          <img style="width:96%;" src="AI/fig.png">
+          <p><strong>Tags: Process Variation, Analog Compute-in-Memory, Hardware Security, Compressed Sensing, Automation</strong></P> 
+          <P><strong>Background:</strong>
+            Analog computing has a great potential in neural network inference/training,
+            solving differential equations and many other kinds of computations. Previous research has 
+            shown that SRAM-based mixed-signal CIM is more energy efficient compared to
+            digital accelerators and NVM-based CIM. Besides, the stochastic nature of analog 
+            circuits provides entropy source which can be used to achieve secure computing and communication.
+          </P>
+          <P><strong>Motivation:</strong>
+            In this research, a novel edge computing structure combining analog CIM and physical unclonable function(PUF) 
+            on the same SRAM array is proposed. A privacy-preserved compressing algorithm is implemented on this hardware.
+            From a general perspective, <strong>A bottom-up analysis of nonidealities</strong> can help to find tradeoff among various of performance 
+            metrics and inspire the improvements. Specifically, process variation is the randomness source of PUF while limits the accuracy of CIM. 
+            We can control <strong>the shift between CIM and PUF</strong> if we can control the impact of the process variation.
+          </P>
+          <P><strong>Analysis & Results:</strong>
+              The nonidealities analysis shows that the main factor limits the accuracy of CIM is the static error caused by the process variation, which 
+              is in a <strong>fusiform shape(Right Figure)</strong> and is common in RAM-based analog computing system. A metric to <strong>quantify the max error</strong> caused by process variation is proposed in the analysis.
+               The control of process variation can improve the robustness and randomness of PUF. Besides, we wrote scripts to achieve an automatic flow from process/temperature variation generation, to SPICE netlist generation
+             
+            <a href="https://github.com/pengyuzeng03/Automated-Design-Tool"> <strong>[Code]</strong></a>
+          </P> 
+           <br>
+        </p>
+       
+
+    <h4><li type="square"><b>4. Pipelined ADC</b></li></h4>
+      <p class="w3-justify">
+        <img style="width:96%;" src="ADC/new.png">
+        <p><strong>Tags: Analog-to-Digital Convertor (ADC), Mismatch, Aperture Error, Correction, Calibration, Agile Design</strong> </p>
+        <P><strong>Background:</strong>Pipelined ADC is one of the most popular types of ADC. The multiple-stage and pipeline design reduces the number of comparators and keeps a high speed.
+         The digital error correction is a significant algorithm 
+         which can correct the digital output error caused by the mismatch of comparators and aperture error. 
+         However, this algorithm lacks of clear explanations for many questions. For example, 
+         why the outputs of each stage need <strong>overlap-addition</strong> to get the total output of ADC? Why the precision of a stage can be <strong>'1.5 bits'</strong>  ? And why the error can be corrected?
+         
+        </p>
+        <P><strong>Motivation:</strong>
+        To answer the questions mentioned above, we need a <strong>systematic and quantitative</strong> modeling and analysis of pipeline ADC.
+         From a general perspective, we need to describe the signal in algebraic equations to quantify the error and <strong>build links</strong> among the analog input signal, analog output(residue) and the digital output codes to explain the principal of correction.
+         Besides, we have to build a bridge between a single stage's output and the ADC's total output to explain the reason of overlap-addition and 'x.5 bits'.
+        </p>
+        <P><strong>Analysis & Results:</strong>
+        We build the transfer equation and its waveform to visualize the process of signal quantization and the impact of mismatch. We proposed that a valid correction should 
+        <strong>not only correct the digital output but also correct the analog residue</strong> to make sure the latter stage's input is correct.
+        Besides, since the simulation on EDA tools is very slow, a behavior model on the MATLAB is built to preliminarily verify the design of ADC, which can accelerate the whole design process.
+        This model will be open-sourced soon.
+        
+        <a href="ADC/Detailed_Analysis_of_the_Digital_Error_Correction_in_the_Pipelined_ADC.pdf"> <strong>[Slides]</strong></a>
+      </p>
+        <br>
+      </p>
+
+      
+
+
+      <h4><li type="square"><b>5. Digital and Board Level Circuits Design</b></li></h4>
+      <p class="w3-justify">
+        <img style="width:96%;" src="board/1.png"> 
+        <p><strong>Tags: SoC, Accelerator, ARM, FPGA, PCB</strong> </p>
+        <p></p><strong>Abstract:</strong> A SoC for real-time image dehazing is implemented on Xilinx FPGA and uses ARM Cortex-M3 as CPU <strong>(Left)</strong>.
+         The Dark Channel Prior algorithm is divided into two 3-stage pipelines to accelerate the operation.
+        The parallel filtering is also proposed to make full use of hardware resource and speed up the computations.
+         PCB board is useful for chips verification and system implementation. I am familiar with PCB-level circuits design. These work <strong>(Right)</strong> is for a intelligent transport robot.
+        <a href="https://github.com/pengyuzeng03/pengyuzeng03.github.io/tree/main/projects/Robot/"> <strong>[Schematics]</strong></a></p>
+        <br>
+      </p>
+
+  </div>
+
+ <!-- 
+  <div class="w3-container w3-padding-32" id="purpose">
+    <h2>Statements of Purpose</h2>
+    <p><li> <a href="SoP/SoP.pdf">Statement of purpose of my research interests</a></p>
+    
+  </div>  
+The Purpose Section -->
+<!-- The Projects Section -->
+<div class="w3-container w3-padding-32" id="projects">
+  <h2>Academic Projects</h2>
+  <p class="w3-justify">
+    <p><li>2021, <a href="https://github.com/pengyuzeng03/pengyuzeng03.github.io/tree/main/projects/Gender_voice_recognition/">Voice Recognition Platform with Machine Learning Method</a>.</p>
+    <p><li>2021, <a href="https://github.com/pengyuzeng03/pengyuzeng03.github.io/tree/main/projects/FM/">Frequency Modulator with Voltage Controlled Varactor</a>.</p>
+    <p><li>2020, <a href="https://github.com/pengyuzeng03/pengyuzeng03.github.io/tree/main/projects/Robot/">Intelligent Transport Robot Based on Raspberry Pi</a>.</p>
+    <p><li>2020, <a href="https://github.com/pengyuzeng03/pengyuzeng03.github.io/tree/main/projects/FSM/">Finite State Machine Design for a Timer System Using Verilog</a>.</p>
+    <p><li>2020, <a href="https://github.com/pengyuzeng03/pengyuzeng03.github.io/tree/main/projects/GPS_Ionospheric_observation/">GPS Ionospheric Observation Platform Based on .Net Framework</a>.</p>
+    <p><li>2019, <a href="https://github.com/pengyuzeng03/pengyuzeng03.github.io/tree/main/projects/Water_logging/">IoT Platform for Urban Waterlogging Detection Based on LoRa and STM32</a>.</p>
+    <p><li>2019, <a href="https://github.com/pengyuzeng03/pengyuzeng03.github.io/tree/main/projects/Access_Control/">Intelligent Access Control System Based on Android</a>.</p>
+</div>
+
+
+  <div class="w3-container w3-center w3-padding-24">
+     <strong>Thank you for your time to read this page! Have a good day!</strong>
+    <p>Latest update on January 3, 2023 at 05:10 UTC. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">W3.CSS</a> .</p>
+    <img src="//www.clustrmaps.com/map_v2.png?d=npwYceiLtZJo9dHi1bSXMtduNsLqBYCKhURDbBtk3lM&cl=ffffff" />
+
+</div>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</body>
+</html>
